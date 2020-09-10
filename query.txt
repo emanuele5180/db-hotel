@@ -37,6 +37,11 @@ GOAL: produrre le query per rispondere alle seguenti interrogazioni
 
     • Seleziona gli ospiti riconosciuti con patente e nati nel 1975
 
+    SELECT * FROM ospiti WHERE document_type
+    LIKE 'Driver License' AND YEAR(date_of_birth) LIKE 1975
+
+    --------------------------------------------------------
+
 
     • Quanti posti letto ha l'hotel in totale?
 
